@@ -140,7 +140,185 @@ namespace MonolithGuns
             Gun Deagle = new Gun
             {
                 Name = "Desert Eagle",
-
+                WeaponPart = "Pistol",
+                Crafting = 35,
+                CopperBar = 8,
+                IronBar = 10,
+                SteelBar = 3
+            };
+            Gun G36C = new Gun
+            {
+                Name = "G36C",
+                WeaponPart = "Damaged Rifle",
+                Crafting = 37,
+                CopperBar = 11,
+                IronBar = 11,
+                SteelBar = 5
+            };
+            Gun LR = new Gun
+            {
+                Name = "LR-300",
+                WeaponPart = "Rifle",
+                Crafting = 40,
+                CopperBar = 11,
+                IronBar = 11,
+                SteelBar = 5,
+                SilverBar = 4
+            };
+            Gun DP = new Gun
+            {
+                Name = "DP-28",
+                WeaponPart = "Rifle",
+                Crafting = 40,
+                CopperBar = 12,
+                IronBar = 12,
+                SteelBar = 6,
+                SilverBar = 5
+            };
+            Gun Shorty = new Gun
+            {
+                Name = "Serbu Shorty",
+                WeaponPart = "Shotgun",
+                Crafting = 40,
+                CopperBar = 7,
+                IronBar = 8,
+                SteelBar = 10
+            };
+            Gun Galil = new Gun
+            {
+                Name = "IMI Galil",
+                WeaponPart = "Rifle",
+                Crafting = 41,
+                IronBar = 14,
+                SteelBar = 9,
+                SilverBar = 10
+            };
+            Gun G3A3 = new Gun
+            {
+                Name = "G3A3",
+                WeaponPart = "Rifle",
+                Crafting = 42,
+                CopperBar = 12,
+                SteelBar = 12,
+                SilverBar = 9
+            };
+            Gun Honey = new Gun
+            {
+                Name = "Honey Badger",
+                WeaponPart = "Rifle",
+                Crafting = 50,
+                CopperBar = 10,
+                IronBar = 11,
+                SteelBar = 12,
+                GoldBar = 11
+            };
+            Gun M249 = new Gun
+            {
+                Name = "M249",
+                WeaponPart = "Rifle",
+                Crafting = 60,
+                CopperBar = 9,
+                IronBar = 11,
+                SteelBar = 12,
+                GoldBar = 13,
+                TitaniumBar = 3
+            };
+            Gun MP9 = new Gun
+            {
+                Name = "BT MP9",
+                WeaponPart = "Pistol",
+                Crafting = 62,
+                IronBar = 13,
+                SteelBar = 5,
+                SilverBar = 8,
+                TitaniumBar = 2
+            };
+            Gun Mosin = new Gun
+            {
+                Name = "Mosin Nagant",
+                WeaponPart = "Sniper",
+                Crafting = 64,
+                CopperBar = 8,
+                IronBar = 14,
+                SteelBar = 16,
+                SilverBar = 19
+            };
+            Gun M14 = new Gun
+            {
+                Name = "M14",
+                WeaponPart = "Sniper",
+                Crafting = 65,
+                IronBar = 14,
+                SteelBar = 13,
+                SilverBar = 17,
+                GoldBar = 6,
+                TitaniumBar = 5
+            };
+            Gun Super = new Gun
+            {
+                Name = "M3 Super 90",
+                WeaponPart = "Shotgun",
+                Crafting = 66,
+                IronBar = 15,
+                SteelBar = 6,
+                SilverBar = 7,
+                GoldBar = 8
+            };
+            Gun M4 = new Gun
+            {
+                Name = "M4 Carbine",
+                WeaponPart = "Rifle",
+                Crafting = 68,
+                CopperBar = 10,
+                IronBar = 11,
+                SteelBar = 10,
+                SilverBar = 8,
+                GoldBar = 11,
+                TitaniumBar = 1
+            };
+            Gun ACR = new Gun
+            {
+                Name = "ACR-E",
+                WeaponPart = "Rifle",
+                Crafting = 73,
+                CopperBar = 12,
+                IronBar = 13,
+                SteelBar = 10,
+                GoldBar = 10,
+                TitaniumBar = 2
+            };
+            Gun KSG = new Gun
+            {
+                Name = "KSG-12 Shotgun",
+                WeaponPart = "Shotgun",
+                IronBar = 17,
+                SteelBar = 13,
+                SilverBar = 7,
+                GoldBar = 8,
+                TitaniumBar = 5
+            };
+            Gun AUG = new Gun
+            {
+                Name = "AUG A3",
+                WeaponPart = "Rifle",
+                CopperBar = 12,
+                IronBar = 11,
+                SteelBar = 14,
+                SilverBar = 8,
+                GoldBar = 13,
+                TitaniumBar = 4
+            };
+            Gun XM8 = new Gun
+            {
+                Name = "XM8",
+                WeaponPart = "Rifle",
+                CopperBar = 6,
+                IronBar = 6,
+                SteelBar = 14,
+                SilverBar = 20,
+                GoldBar = 13,
+                TitaniumBar = 7
+            };
         }
     }
 }
