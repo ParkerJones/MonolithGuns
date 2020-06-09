@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Threading;
+using System.Collections;
+using System.Reflection;
+using System.Linq;
 
 /*
  * Title: Monolith Gun Crafting Calculator
@@ -320,11 +323,14 @@ namespace MonolithGuns
                 TitaniumBar = 7
             };
             Console.Clear();
-            Console.Write('W');
-            
-
             string itemInput = "Banana";
-            int itemQuantity;
+            int itemQuantity = 0;
+            double TotalCoal = 0;
+            double TotalCopper = 0;
+            double TotalIron = 0;
+            double TotalSilver = 0;
+            double TotalGold = 0;
+            double TotalTitanium = 0;
             while (itemInput != "done")
             {
                 PrintLine();
@@ -359,16 +365,355 @@ namespace MonolithGuns
                 }
                 Console.WriteLine("How many " + itemInput +"'s do you want?");
                 itemQuantity = Convert.ToInt16(Console.ReadLine());
+                Console.WriteLine();
+                Console.Write("I"); Thread.Sleep(50);
+                Console.Write("t"); Thread.Sleep(50);
+                Console.Write("e"); Thread.Sleep(50);
+                Console.Write("m"); Thread.Sleep(50);
+                Console.Write(" "); Thread.Sleep(50);
+                Console.Write("a"); Thread.Sleep(50);
+                Console.Write("d"); Thread.Sleep(50);
+                Console.Write("d"); Thread.Sleep(50);
+                Console.Write("e"); Thread.Sleep(50);
+                Console.Write("d"); Thread.Sleep(50);
+                Console.Write("."); Thread.Sleep(50);
+                Console.Write("."); Thread.Sleep(50);
+                Console.Write("."); Thread.Sleep(500);
 
                 // This is where the math needs to be done.
-                Console.Clear();
+                ArrayList GunArray = new ArrayList()
+                {
+                    new Gun
+                    {
+                        Name = "Makarov",
+                        WeaponPart = "Pistol",
+                        Crafting = 5,
+                        CopperBar = 8,
+                        IronBar = 5
+                    },
+                    new Gun
+                    {
+                        Name = "M1911",
+                        WeaponPart = "Pistol",
+                        Crafting = 12,
+                        CopperBar = 9,
+                        IronBar = 6
+                    },
+                    new Gun
+                    {
+                        Name = "P99",
+                        WeaponPart = "Pistol",
+                        Crafting = 15,
+                        CopperBar = 8,
+                        IronBar = 8
+                    },
+                    new Gun
+                    {
+                        Name = "FN-FiveSeven",
+                        WeaponPart = "Pistol",
+                        Crafting = 18,
+                        CopperBar = 7,
+                        IronBar = 9,
+                        SteelBar = 2
+                    },
+                    new Gun
+                    {
+                        Name = "Mac-11",
+                        WeaponPart = "Pistol",
+                        Crafting = 20,
+                        CopperBar = 9,
+                        IronBar = 10
+                    },
+                    new Gun
+                    {
+                        Name = "MR96",
+                        WeaponPart = "Pistol",
+                        Crafting = 20,
+                        CopperBar = 8,
+                        IronBar = 5,
+                        SteelBar = 5
+                    },
+                    new Gun
+                    {
+                        Name = "HK MP5",
+                        WeaponPart = "Pistol",
+                        Crafting = 21,
+                        CopperBar = 10,
+                        IronBar = 12,
+                        SteelBar = 2
+                    },
+                    new Gun
+                    {
+                        Name = "H&K UMP .45",
+                        WeaponPart = "Pistol",
+                        Crafting = 27,
+                        CopperBar = 14,
+                        IronBar = 16
+                    },
+                    new Gun
+                    {
+                        Name = "AK-74",
+                        WeaponPart = "Damaged Rifle",
+                        Crafting = 28,
+                        CopperBar = 11,
+                        IronBar = 11,
+                        SteelBar = 1
+                    },
+                    new Gun
+                    {
+                        Name = "Glock 18",
+                        WeaponPart = "Pistol",
+                        Crafting = 28,
+                        CopperBar = 8,
+                        IronBar = 12,
+                        SteelBar = 6
+                    },
+                    new Gun
+                    {
+                        Name = "AR-15",
+                        WeaponPart = "Damaged Rifle",
+                        Crafting = 30,
+                        CopperBar = 11,
+                        IronBar = 11,
+                        SteelBar = 3
+                    },
+                    new Gun
+                    {
+                        Name = "Thompson",
+                        WeaponPart = "Pistol",
+                        Crafting = 31,
+                        CopperBar = 15,
+                        IronBar = 17,
+                        SteelBar = 2
+                    },
+                    new Gun
+                    {
+                        Name = "Glock 17",
+                        WeaponPart = "Pistol",
+                        Crafting = 32,
+                        CopperBar = 8,
+                        IronBar = 8,
+                        SteelBar = 3,
+                        SilverBar = 1,
+                        GoldBar = 2
+                    },
+                    new Gun
+                    {
+                        Name = "Kriss Vector",
+                        WeaponPart = "Pistol",
+                        Crafting = 34,
+                        IronBar = 12,
+                        SteelBar = 7,
+                        SilverBar = 5,
+                        GoldBar = 6
+                    },
+                    new Gun
+                    {
+                        Name = "Desert Eagle",
+                        WeaponPart = "Pistol",
+                        Crafting = 35,
+                        CopperBar = 8,
+                        IronBar = 10,
+                        SteelBar = 3
+                    },
+                    new Gun
+                    {
+                        Name = "G36C",
+                        WeaponPart = "Damaged Rifle",
+                        Crafting = 37,
+                        CopperBar = 11,
+                        IronBar = 11,
+                        SteelBar = 5
+                    },
+                    new Gun
+                    {
+                        Name = "LR-300",
+                        WeaponPart = "Rifle",
+                        Crafting = 40,
+                        CopperBar = 11,
+                        IronBar = 11,
+                        SteelBar = 5,
+                        SilverBar = 4
+                    },
+                    new Gun
+                    {
+                        Name = "DP-28",
+                        WeaponPart = "Rifle",
+                        Crafting = 40,
+                        CopperBar = 12,
+                        IronBar = 12,
+                        SteelBar = 6,
+                        SilverBar = 5
+                    },
+                    new Gun
+                    {
+                        Name = "Serbu Shorty",
+                        WeaponPart = "Shotgun",
+                        Crafting = 40,
+                        CopperBar = 7,
+                        IronBar = 8,
+                        SteelBar = 10
+                    },
+                    new Gun
+                    {
+                        Name = "IMI Galil",
+                        WeaponPart = "Rifle",
+                        Crafting = 41,
+                        IronBar = 14,
+                        SteelBar = 9,
+                        SilverBar = 10
+                    },
+                    new Gun
+                    {
+                        Name = "G3A3",
+                        WeaponPart = "Rifle",
+                        Crafting = 42,
+                        CopperBar = 12,
+                        SteelBar = 12,
+                        SilverBar = 9
+                    },
+                    new Gun
+                    {
+                        Name = "Honey Badger",
+                        WeaponPart = "Rifle",
+                        Crafting = 50,
+                        CopperBar = 10,
+                        IronBar = 11,
+                        SteelBar = 12,
+                        GoldBar = 11
+                    },
+                    new Gun
+                    {
+                        Name = "M249",
+                        WeaponPart = "Rifle",
+                        Crafting = 60,
+                        CopperBar = 9,
+                        IronBar = 11,
+                        SteelBar = 12,
+                        GoldBar = 13,
+                        TitaniumBar = 3
+                    },
+                    new Gun
+                    {
+                        Name = "BT MP9",
+                        WeaponPart = "Pistol",
+                        Crafting = 62,
+                        IronBar = 13,
+                        SteelBar = 5,
+                        SilverBar = 8,
+                        TitaniumBar = 2
+                    },
+                    new Gun
+                    {
+                        Name = "Mosin Nagant",
+                        WeaponPart = "Sniper",
+                        Crafting = 64,
+                        CopperBar = 8,
+                        IronBar = 14,
+                        SteelBar = 16,
+                        SilverBar = 19
+                    },
+                    new Gun
+                    {
+                        Name = "M14",
+                        WeaponPart = "Sniper",
+                        Crafting = 65,
+                        IronBar = 14,
+                        SteelBar = 13,
+                        SilverBar = 17,
+                        GoldBar = 6,
+                        TitaniumBar = 5
+                    },
+                    new Gun
+                    {
+                        Name = "M3 Super 90",
+                        WeaponPart = "Shotgun",
+                        Crafting = 66,
+                        IronBar = 15,
+                        SteelBar = 6,
+                        SilverBar = 7,
+                        GoldBar = 8
+                    },
+                    new Gun
+                    {
+                        Name = "M4 Carbine",
+                        WeaponPart = "Rifle",
+                        Crafting = 68,
+                        CopperBar = 10,
+                        IronBar = 11,
+                        SteelBar = 10,
+                        SilverBar = 8,
+                        GoldBar = 11,
+                        TitaniumBar = 1
+                    },
+                    new Gun
+                    {
+                        Name = "ACR-E",
+                        WeaponPart = "Rifle",
+                        Crafting = 73,
+                        CopperBar = 12,
+                        IronBar = 13,
+                        SteelBar = 10,
+                        GoldBar = 10,
+                        TitaniumBar = 2
+                    },
+                    new Gun
+                    {
+                        Name = "KSG-12 Shotgun",
+                        WeaponPart = "Shotgun",
+                        IronBar = 17,
+                        SteelBar = 13,
+                        SilverBar = 7,
+                        GoldBar = 8,
+                        TitaniumBar = 5
+                    },
+                    new Gun
+                    {
+                        Name = "AUG A3",
+                        WeaponPart = "Rifle",
+                        CopperBar = 12,
+                        IronBar = 11,
+                        SteelBar = 14,
+                        SilverBar = 8,
+                        GoldBar = 13,
+                        TitaniumBar = 4
+                    },
+                    new Gun
+                    {
+                        Name = "XM8",
+                        WeaponPart = "Rifle",
+                        CopperBar = 6,
+                        IronBar = 6,
+                        SteelBar = 14,
+                        SilverBar = 20,
+                        GoldBar = 13,
+                        TitaniumBar = 7
+                    }
+                };
                 
+                var GunEnum = GunArray.OfType<Gun>();
+                var AddedGun = from gun in GunEnum where gun.Name == itemInput orderby gun.Name select gun;
+                foreach(var gun in AddedGun)
+                {
+                    TotalCoal = TotalCoal + gun.CoalChunk*itemQuantity;
+                    TotalCopper = TotalCopper + gun.CopperChunk*itemQuantity;
+                    TotalIron = TotalIron + gun.IronChunk*itemQuantity;
+                    TotalSilver = TotalSilver + gun.SilverChunk*itemQuantity;
+                    TotalGold = TotalGold + gun.GoldChunk*itemQuantity;
+                    TotalTitanium = TotalTitanium = gun.TitaniumChunk*itemQuantity;
+                }
+                Console.Clear();
             }
-
             //Display all the totals here.
             Console.Clear();
-            Console.WriteLine("Your order will cost:\n\nCopper Chunks:\nIron Chunks:\nSilver Chunks:\nGold Chunks:\nTitanium Chunks:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-            
+            Console.WriteLine("Coal Chunks: " + TotalCoal);
+            Console.WriteLine("Copper Chunks: " + TotalCopper);
+            Console.WriteLine("Iron Chunks: " + TotalIron);
+            Console.WriteLine("Silver Chunks: " + TotalSilver);
+            Console.WriteLine("Gold Chunks: " + TotalGold);
+            Console.WriteLine("Titanium Chunks: " + TotalTitanium);
+            Console.WriteLine("\n\n\nCreated by parkerx\nPress any key to close...");
+            Console.ReadKey();
         }
         static int tableWidth = 73;
         static void PrintLine()
