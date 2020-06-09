@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 /*
  * Title: Monolith Gun Crafting Calculator
@@ -319,25 +320,55 @@ namespace MonolithGuns
                 TitaniumBar = 7
             };
             Console.Clear();
-            PrintLine();
-            PrintRow("Rifles", "SMGs", "Pistols", "Other");
-            PrintLine();
-            PrintLine();
-            PrintRow(AK.Name, MAC11.Name, Makarov.Name, Shorty.Name);
-            PrintRow(AR15.Name, MP5.Name, M1911.Name, Mosin.Name);
-            PrintRow(G36C.Name, UMP.Name, P99.Name, M14.Name);
-            PrintRow(LR.Name, Thompson.Name, FiveSeven.Name, Super.Name);
-            PrintRow(DP.Name, Vector.Name, MR96.Name, KSG.Name);
-            PrintRow(Galil.Name, MP9.Name, Glock18.Name, "");
-            PrintRow(G3A3.Name, "", Glock17.Name, "");
-            PrintRow(Honey.Name, "", Deagle.Name, "");
-            PrintRow(M249.Name, "", "", "");
-            PrintRow(M4.Name, "", "", "");
-            PrintRow(ACR.Name, "", "", "");
-            PrintRow(AUG.Name, "", "", "");
-            PrintRow(XM8.Name, "", "", "");
+            Console.Write('W');
+            
 
-            PrintLine();
+            string itemInput = "Banana";
+            int itemQuantity;
+            while (itemInput != "done")
+            {
+                PrintLine();
+                PrintRow("Rifles", "SMGs", "Pistols", "Other");
+                PrintLine();
+                PrintLine();
+                PrintRow(AK.Name, MAC11.Name, Makarov.Name, Shorty.Name);
+                PrintRow(AR15.Name, MP5.Name, M1911.Name, Mosin.Name);
+                PrintRow(G36C.Name, UMP.Name, P99.Name, M14.Name);
+                PrintRow(LR.Name, Thompson.Name, FiveSeven.Name, Super.Name);
+                PrintRow(DP.Name, Vector.Name, MR96.Name, KSG.Name);
+                PrintRow(Galil.Name, MP9.Name, Glock18.Name, "");
+                PrintRow(G3A3.Name, "", Glock17.Name, "");
+                PrintRow(Honey.Name, "", Deagle.Name, "");
+                PrintRow(M249.Name, "", "", "");
+                PrintRow(M4.Name, "", "", "");
+                PrintRow(ACR.Name, "", "", "");
+                PrintRow(AUG.Name, "", "", "");
+                PrintRow(XM8.Name, "", "", "");
+                PrintLine();
+
+                Console.WriteLine("\nType the exact name of a gun from the table above. (type 'done' if you're done)");
+                itemInput = Console.ReadLine();
+                while (!(itemInput == "done" || itemInput == Makarov.Name || itemInput == M1911.Name || itemInput == P99.Name || itemInput == FiveSeven.Name || itemInput == MAC11.Name || itemInput == MR96.Name || itemInput == MP5.Name || itemInput == UMP.Name || itemInput == AK.Name || itemInput == Glock18.Name || itemInput == AR15.Name || itemInput == Thompson.Name || itemInput == Glock17.Name || itemInput == Vector.Name || itemInput == Deagle.Name || itemInput == G36C.Name || itemInput == LR.Name || itemInput == DP.Name || itemInput == Shorty.Name || itemInput == Galil.Name || itemInput == G3A3.Name || itemInput == Honey.Name || itemInput == M249.Name || itemInput == MP9.Name || itemInput == Mosin.Name || itemInput == M14.Name || itemInput == Super.Name || itemInput == M4.Name || itemInput == ACR.Name || itemInput == KSG.Name || itemInput == AUG.Name || itemInput == XM8.Name))
+                {
+                    Console.WriteLine("ERROR -- Try something else:");
+                    itemInput = Console.ReadLine();
+                }
+                if (itemInput == "done")
+                {
+                    break;
+                }
+                Console.WriteLine("How many " + itemInput +"'s do you want?");
+                itemQuantity = Convert.ToInt16(Console.ReadLine());
+
+                // This is where the math needs to be done.
+                Console.Clear();
+                
+            }
+
+            //Display all the totals here.
+            Console.Clear();
+            Console.WriteLine("Your order will cost:\n\nCopper Chunks:\nIron Chunks:\nSilver Chunks:\nGold Chunks:\nTitanium Chunks:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+            
         }
         static int tableWidth = 73;
         static void PrintLine()

@@ -2,8 +2,13 @@
 
 namespace MonolithGuns
 {
-    public class Gun
+    class Gun
     {
+        public static int count = 0;
+        public Gun()
+        {
+            count++;
+        }
         public string Name;
         public string WeaponPart;
         public int Crafting;
