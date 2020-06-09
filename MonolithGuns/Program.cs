@@ -318,6 +318,53 @@ namespace MonolithGuns
                 GoldBar = 13,
                 TitaniumBar = 7
             };
+            Console.Clear();
+            PrintLine();
+            PrintRow("Rifles", "SMGs", "Pistols", "Other");
+            PrintLine();
+            PrintLine();
+            PrintRow(AK.Name, MAC11.Name, Makarov.Name, Shorty.Name);
+            PrintRow(AR15.Name, MP5.Name, M1911.Name, Mosin.Name);
+            PrintRow(G36C.Name, UMP.Name, P99.Name, M14.Name);
+            PrintRow(LR.Name, Thompson.Name, FiveSeven.Name, Super.Name);
+            PrintRow(DP.Name, Vector.Name, MR96.Name, KSG.Name);
+            PrintRow(Galil.Name, MP9.Name, Glock18.Name, "");
+            PrintRow(G3A3.Name, "", Glock17.Name, "");
+            PrintRow(Honey.Name, "", Deagle.Name, "");
+            PrintRow(M249.Name, "", "", "");
+            PrintRow(M4.Name, "", "", "");
+            PrintRow(ACR.Name, "", "", "");
+            PrintRow(AUG.Name, "", "", "");
+            PrintRow(XM8.Name, "", "", "");
+
+            PrintLine();
+        }
+        static int tableWidth = 73;
+        static void PrintLine()
+        {
+            Console.WriteLine(new string('-', tableWidth));
+        }
+        static void PrintRow(params string[] columns)
+        {
+            int width = (tableWidth - columns.Length) / columns.Length;
+            string row = "|";
+            foreach (string column in columns)
+            {
+                row += AlignCenter(column, width) + "|";
+            }
+            Console.WriteLine(row);
+        }
+        static string AlignCenter(string text, int width)
+        {
+            text = text.Length > width ? text.Substring(0, width - 3) + "..." : text;
+            if (string.IsNullOrEmpty(text))
+            {
+                return new string(' ', width);
+            }
+            else
+            {
+                return text.PadRight(width - (width - text.Length) / 2).PadLeft(width);
+            }
         }
     }
 }
