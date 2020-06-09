@@ -1,10 +1,9 @@
 ﻿using System;
 
 /*
- * Title: 
- * Author: 
- * Date: 
- * Purpose: 
+ * Title: Monolith Gun Crafting Calculator
+ * Author: Parker Jones
+ * Date: Created 6-5-2020
  */
 
 namespace MonolithGuns
