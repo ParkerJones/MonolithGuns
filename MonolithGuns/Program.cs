@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Threading;
 using System.Collections;
-using System.Reflection;
 using System.Linq;
 
 /*
  * Title: Monolith Gun Crafting Calculator
- * Author: Parker Jones
- * Date: Created 6-5-2020
+ * Author: parkerx
+ * Date: Released on 6-9-2020
  */
 
 namespace MonolithGuns
@@ -356,7 +355,7 @@ namespace MonolithGuns
                 itemInput = Console.ReadLine();
                 while (!(itemInput == "done" || itemInput == Makarov.Name || itemInput == M1911.Name || itemInput == P99.Name || itemInput == FiveSeven.Name || itemInput == MAC11.Name || itemInput == MR96.Name || itemInput == MP5.Name || itemInput == UMP.Name || itemInput == AK.Name || itemInput == Glock18.Name || itemInput == AR15.Name || itemInput == Thompson.Name || itemInput == Glock17.Name || itemInput == Vector.Name || itemInput == Deagle.Name || itemInput == G36C.Name || itemInput == LR.Name || itemInput == DP.Name || itemInput == Shorty.Name || itemInput == Galil.Name || itemInput == G3A3.Name || itemInput == Honey.Name || itemInput == M249.Name || itemInput == MP9.Name || itemInput == Mosin.Name || itemInput == M14.Name || itemInput == Super.Name || itemInput == M4.Name || itemInput == ACR.Name || itemInput == KSG.Name || itemInput == AUG.Name || itemInput == XM8.Name))
                 {
-                    Console.WriteLine("ERROR -- Try something else:");
+                    Console.WriteLine("ERROR -- Input unrecognized");
                     itemInput = Console.ReadLine();
                 }
                 if (itemInput == "done")
@@ -365,6 +364,11 @@ namespace MonolithGuns
                 }
                 Console.WriteLine("How many " + itemInput +"'s do you want?");
                 itemQuantity = Convert.ToInt16(Console.ReadLine());
+                while (itemQuantity < 0)
+                {
+                    Console.WriteLine("ERROR -- Use integer greater than -1");
+                    itemQuantity = Convert.ToInt16(Console.ReadLine());
+                }
                 Console.WriteLine();
                 Console.Write("I"); Thread.Sleep(50);
                 Console.Write("t"); Thread.Sleep(50);
@@ -387,6 +391,8 @@ namespace MonolithGuns
                     {
                         Name = "Makarov",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 5,
                         CopperBar = 8,
                         IronBar = 5
@@ -395,6 +401,8 @@ namespace MonolithGuns
                     {
                         Name = "M1911",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 12,
                         CopperBar = 9,
                         IronBar = 6
@@ -403,6 +411,8 @@ namespace MonolithGuns
                     {
                         Name = "P99",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 15,
                         CopperBar = 8,
                         IronBar = 8
@@ -411,6 +421,8 @@ namespace MonolithGuns
                     {
                         Name = "FN-FiveSeven",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 18,
                         CopperBar = 7,
                         IronBar = 9,
@@ -420,6 +432,8 @@ namespace MonolithGuns
                     {
                         Name = "Mac-11",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 20,
                         CopperBar = 9,
                         IronBar = 10
@@ -428,6 +442,8 @@ namespace MonolithGuns
                     {
                         Name = "MR96",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 20,
                         CopperBar = 8,
                         IronBar = 5,
@@ -437,6 +453,8 @@ namespace MonolithGuns
                     {
                         Name = "HK MP5",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 21,
                         CopperBar = 10,
                         IronBar = 12,
@@ -446,6 +464,8 @@ namespace MonolithGuns
                     {
                         Name = "H&K UMP .45",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 27,
                         CopperBar = 14,
                         IronBar = 16
@@ -454,6 +474,8 @@ namespace MonolithGuns
                     {
                         Name = "AK-74",
                         WeaponPart = "Damaged Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
                         Crafting = 28,
                         CopperBar = 11,
                         IronBar = 11,
@@ -463,6 +485,8 @@ namespace MonolithGuns
                     {
                         Name = "Glock 18",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 28,
                         CopperBar = 8,
                         IronBar = 12,
@@ -472,6 +496,8 @@ namespace MonolithGuns
                     {
                         Name = "AR-15",
                         WeaponPart = "Damaged Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
                         Crafting = 30,
                         CopperBar = 11,
                         IronBar = 11,
@@ -481,6 +507,8 @@ namespace MonolithGuns
                     {
                         Name = "Thompson",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 31,
                         CopperBar = 15,
                         IronBar = 17,
@@ -490,6 +518,8 @@ namespace MonolithGuns
                     {
                         Name = "Glock 17",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 32,
                         CopperBar = 8,
                         IronBar = 8,
@@ -501,6 +531,8 @@ namespace MonolithGuns
                     {
                         Name = "Kriss Vector",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 34,
                         IronBar = 12,
                         SteelBar = 7,
@@ -511,6 +543,8 @@ namespace MonolithGuns
                     {
                         Name = "Desert Eagle",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 35,
                         CopperBar = 8,
                         IronBar = 10,
@@ -520,6 +554,8 @@ namespace MonolithGuns
                     {
                         Name = "G36C",
                         WeaponPart = "Damaged Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
                         Crafting = 37,
                         CopperBar = 11,
                         IronBar = 11,
@@ -529,6 +565,9 @@ namespace MonolithGuns
                     {
                         Name = "LR-300",
                         WeaponPart = "Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
+                        PartSteel = 2,
                         Crafting = 40,
                         CopperBar = 11,
                         IronBar = 11,
@@ -539,6 +578,9 @@ namespace MonolithGuns
                     {
                         Name = "DP-28",
                         WeaponPart = "Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
+                        PartSteel = 2,
                         Crafting = 40,
                         CopperBar = 12,
                         IronBar = 12,
@@ -549,6 +591,9 @@ namespace MonolithGuns
                     {
                         Name = "Serbu Shorty",
                         WeaponPart = "Shotgun",
+                        PartIron = 1,
+                        PartSteel = 1,
+                        PartSilver = 3,
                         Crafting = 40,
                         CopperBar = 7,
                         IronBar = 8,
@@ -558,6 +603,9 @@ namespace MonolithGuns
                     {
                         Name = "IMI Galil",
                         WeaponPart = "Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
+                        PartSteel = 2,
                         Crafting = 41,
                         IronBar = 14,
                         SteelBar = 9,
@@ -567,6 +615,9 @@ namespace MonolithGuns
                     {
                         Name = "G3A3",
                         WeaponPart = "Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
+                        PartSteel = 2,
                         Crafting = 42,
                         CopperBar = 12,
                         SteelBar = 12,
@@ -576,6 +627,9 @@ namespace MonolithGuns
                     {
                         Name = "Honey Badger",
                         WeaponPart = "Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
+                        PartSteel = 2,
                         Crafting = 50,
                         CopperBar = 10,
                         IronBar = 11,
@@ -586,6 +640,9 @@ namespace MonolithGuns
                     {
                         Name = "M249",
                         WeaponPart = "Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
+                        PartSteel = 2,
                         Crafting = 60,
                         CopperBar = 9,
                         IronBar = 11,
@@ -597,6 +654,8 @@ namespace MonolithGuns
                     {
                         Name = "BT MP9",
                         WeaponPart = "Pistol",
+                        PartCopper = 2,
+                        PartIron = 2,
                         Crafting = 62,
                         IronBar = 13,
                         SteelBar = 5,
@@ -607,6 +666,9 @@ namespace MonolithGuns
                     {
                         Name = "Mosin Nagant",
                         WeaponPart = "Sniper",
+                        PartSteel = 4,
+                        PartSilver = 3,
+                        PartGold = 2,
                         Crafting = 64,
                         CopperBar = 8,
                         IronBar = 14,
@@ -617,6 +679,9 @@ namespace MonolithGuns
                     {
                         Name = "M14",
                         WeaponPart = "Sniper",
+                        PartSteel = 4,
+                        PartSilver = 3,
+                        PartGold = 2,
                         Crafting = 65,
                         IronBar = 14,
                         SteelBar = 13,
@@ -628,6 +693,9 @@ namespace MonolithGuns
                     {
                         Name = "M3 Super 90",
                         WeaponPart = "Shotgun",
+                        PartIron = 1,
+                        PartSteel = 1,
+                        PartSilver = 3,
                         Crafting = 66,
                         IronBar = 15,
                         SteelBar = 6,
@@ -638,6 +706,9 @@ namespace MonolithGuns
                     {
                         Name = "M4 Carbine",
                         WeaponPart = "Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
+                        PartSteel = 2,
                         Crafting = 68,
                         CopperBar = 10,
                         IronBar = 11,
@@ -650,6 +721,9 @@ namespace MonolithGuns
                     {
                         Name = "ACR-E",
                         WeaponPart = "Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
+                        PartSteel = 2,
                         Crafting = 73,
                         CopperBar = 12,
                         IronBar = 13,
@@ -661,6 +735,9 @@ namespace MonolithGuns
                     {
                         Name = "KSG-12 Shotgun",
                         WeaponPart = "Shotgun",
+                        PartIron = 1,
+                        PartSteel = 1,
+                        PartSilver = 3,
                         IronBar = 17,
                         SteelBar = 13,
                         SilverBar = 7,
@@ -671,6 +748,9 @@ namespace MonolithGuns
                     {
                         Name = "AUG A3",
                         WeaponPart = "Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
+                        PartSteel = 2,
                         CopperBar = 12,
                         IronBar = 11,
                         SteelBar = 14,
@@ -682,6 +762,9 @@ namespace MonolithGuns
                     {
                         Name = "XM8",
                         WeaponPart = "Rifle",
+                        PartCopper = 5,
+                        PartIron = 5,
+                        PartSteel = 2,
                         CopperBar = 6,
                         IronBar = 6,
                         SteelBar = 14,
@@ -690,17 +773,16 @@ namespace MonolithGuns
                         TitaniumBar = 7
                     }
                 };
-                
                 var GunEnum = GunArray.OfType<Gun>();
                 var AddedGun = from gun in GunEnum where gun.Name == itemInput orderby gun.Name select gun;
                 foreach(var gun in AddedGun)
                 {
-                    TotalCoal = TotalCoal + gun.CoalChunk*itemQuantity;
-                    TotalCopper = TotalCopper + gun.CopperChunk*itemQuantity;
-                    TotalIron = TotalIron + gun.IronChunk*itemQuantity;
-                    TotalSilver = TotalSilver + gun.SilverChunk*itemQuantity;
-                    TotalGold = TotalGold + gun.GoldChunk*itemQuantity;
-                    TotalTitanium = TotalTitanium = gun.TitaniumChunk*itemQuantity;
+                    TotalCoal = TotalCoal + (gun.CoalChunk*itemQuantity) + gun.PartCoalChunk * itemQuantity;
+                    TotalCopper = TotalCopper + (gun.CopperChunk*itemQuantity) + gun.PartCopperChunk * itemQuantity;
+                    TotalIron = TotalIron + (gun.IronChunk*itemQuantity) + gun.PartIronChunk * itemQuantity;
+                    TotalSilver = TotalSilver + (gun.SilverChunk*itemQuantity) + gun.PartSilverChunk * itemQuantity;
+                    TotalGold = TotalGold + (gun.GoldChunk*itemQuantity) + gun.PartGoldChunk * itemQuantity;
+                    TotalTitanium = TotalTitanium = (gun.TitaniumChunk*itemQuantity);
                 }
                 Console.Clear();
             }
