@@ -909,22 +909,22 @@ namespace MonolithItems
                     new Item
                     {
                         Name = "Steel Bar",
-                        IronBar = 1
+                        SteelBar = 1
                     },
                     new Item
                     {
                         Name = "Silver Bar",
-                        IronBar = 1
+                        SilverBar = 1
                     },
                     new Item
                     {
                         Name = "Gold Bar",
-                        IronBar = 1
+                        GoldBar = 1
                     },
                     new Item
                     {
                         Name = "Titanium Bar",
-                        IronBar = 1
+                        TitaniumBar = 1
                     },
                     new Item
                     {
