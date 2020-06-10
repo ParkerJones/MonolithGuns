@@ -4,18 +4,18 @@ using System.Collections;
 using System.Linq;
 
 /*
- * Title: Monolith Gun Crafting Calculator
+ * Title: Monolith Item Crafting Calculator
  * Author: parkerx
  * Date: Released on 6-9-2020
  */
 
-namespace MonolithGuns
+namespace MonolithItems
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Gun Makarov = new Gun
+            Item Makarov = new Item
             {
                 Name = "Makarov",
                 WeaponPart = "Pistol",
@@ -23,7 +23,7 @@ namespace MonolithGuns
                 CopperBar = 8,
                 IronBar = 5
             };
-            Gun M1911 = new Gun
+            Item M1911 = new Item
             {
                 Name = "M1911",
                 WeaponPart = "Pistol",
@@ -31,7 +31,7 @@ namespace MonolithGuns
                 CopperBar = 9,
                 IronBar = 6
             };
-            Gun P99 = new Gun
+            Item P99 = new Item
             {
                 Name = "P99",
                 WeaponPart = "Pistol",
@@ -39,7 +39,7 @@ namespace MonolithGuns
                 CopperBar = 8,
                 IronBar = 8
             };
-            Gun FiveSeven = new Gun
+            Item FiveSeven = new Item
             {
                 Name = "FN-FiveSeven",
                 WeaponPart = "Pistol",
@@ -48,7 +48,7 @@ namespace MonolithGuns
                 IronBar = 9,
                 SteelBar = 2
             };
-            Gun MAC11 = new Gun
+            Item MAC11 = new Item
             {
                 Name = "Mac-11",
                 WeaponPart = "Pistol",
@@ -56,7 +56,7 @@ namespace MonolithGuns
                 CopperBar = 9,
                 IronBar = 10
             };
-            Gun MR96 = new Gun
+            Item MR96 = new Item
             {
                 Name = "MR96",
                 WeaponPart = "Pistol",
@@ -65,7 +65,7 @@ namespace MonolithGuns
                 IronBar = 5,
                 SteelBar = 5
             };
-            Gun MP5 = new Gun
+            Item MP5 = new Item
             {
                 Name = "HK MP5",
                 WeaponPart = "Pistol",
@@ -74,7 +74,7 @@ namespace MonolithGuns
                 IronBar = 12,
                 SteelBar = 2
             };
-            Gun UMP = new Gun
+            Item UMP = new Item
             {
                 Name = "H&K UMP .45",
                 WeaponPart = "Pistol",
@@ -82,7 +82,7 @@ namespace MonolithGuns
                 CopperBar = 14,
                 IronBar = 16
             };
-            Gun AK = new Gun
+            Item AK = new Item
             {
                 Name = "AK-74",
                 WeaponPart = "Damaged Rifle",
@@ -91,7 +91,7 @@ namespace MonolithGuns
                 IronBar = 11,
                 SteelBar = 1
             };
-            Gun Glock18 = new Gun
+            Item Glock18 = new Item
             {
                 Name = "Glock 18",
                 WeaponPart = "Pistol",
@@ -100,7 +100,7 @@ namespace MonolithGuns
                 IronBar = 12,
                 SteelBar = 6
             };
-            Gun AR15 = new Gun
+            Item AR15 = new Item
             {
                 Name = "AR-15",
                 WeaponPart = "Damaged Rifle",
@@ -109,7 +109,7 @@ namespace MonolithGuns
                 IronBar = 11,
                 SteelBar = 3
             };
-            Gun Thompson = new Gun
+            Item Thompson = new Item
             {
                 Name = "Thompson",
                 WeaponPart = "Pistol",
@@ -118,7 +118,7 @@ namespace MonolithGuns
                 IronBar = 17,
                 SteelBar = 2
             };
-            Gun Glock17 = new Gun
+            Item Glock17 = new Item
             {
                 Name = "Glock 17",
                 WeaponPart = "Pistol",
@@ -129,7 +129,7 @@ namespace MonolithGuns
                 SilverBar = 1,
                 GoldBar = 2
             };
-            Gun Vector = new Gun
+            Item Vector = new Item
             {
                 Name = "Kriss Vector",
                 WeaponPart = "Pistol",
@@ -139,7 +139,7 @@ namespace MonolithGuns
                 SilverBar = 5,
                 GoldBar = 6
             };
-            Gun Deagle = new Gun
+            Item Deagle = new Item
             {
                 Name = "Desert Eagle",
                 WeaponPart = "Pistol",
@@ -148,7 +148,7 @@ namespace MonolithGuns
                 IronBar = 10,
                 SteelBar = 3
             };
-            Gun G36C = new Gun
+            Item G36C = new Item
             {
                 Name = "G36C",
                 WeaponPart = "Damaged Rifle",
@@ -157,7 +157,7 @@ namespace MonolithGuns
                 IronBar = 11,
                 SteelBar = 5
             };
-            Gun LR = new Gun
+            Item LR = new Item
             {
                 Name = "LR-300",
                 WeaponPart = "Rifle",
@@ -167,7 +167,7 @@ namespace MonolithGuns
                 SteelBar = 5,
                 SilverBar = 4
             };
-            Gun DP = new Gun
+            Item DP = new Item
             {
                 Name = "DP-28",
                 WeaponPart = "Rifle",
@@ -177,7 +177,7 @@ namespace MonolithGuns
                 SteelBar = 6,
                 SilverBar = 5
             };
-            Gun Shorty = new Gun
+            Item Shorty = new Item
             {
                 Name = "Serbu Shorty",
                 WeaponPart = "Shotgun",
@@ -186,7 +186,7 @@ namespace MonolithGuns
                 IronBar = 8,
                 SteelBar = 10
             };
-            Gun Galil = new Gun
+            Item Galil = new Item
             {
                 Name = "IMI Galil",
                 WeaponPart = "Rifle",
@@ -195,7 +195,7 @@ namespace MonolithGuns
                 SteelBar = 9,
                 SilverBar = 10
             };
-            Gun G3A3 = new Gun
+            Item G3A3 = new Item
             {
                 Name = "G3A3",
                 WeaponPart = "Rifle",
@@ -204,7 +204,7 @@ namespace MonolithGuns
                 SteelBar = 12,
                 SilverBar = 9
             };
-            Gun Honey = new Gun
+            Item Honey = new Item
             {
                 Name = "Honey Badger",
                 WeaponPart = "Rifle",
@@ -214,7 +214,7 @@ namespace MonolithGuns
                 SteelBar = 12,
                 GoldBar = 11
             };
-            Gun M249 = new Gun
+            Item M249 = new Item
             {
                 Name = "M249",
                 WeaponPart = "Rifle",
@@ -225,7 +225,7 @@ namespace MonolithGuns
                 GoldBar = 13,
                 TitaniumBar = 3
             };
-            Gun MP9 = new Gun
+            Item MP9 = new Item
             {
                 Name = "BT MP9",
                 WeaponPart = "Pistol",
@@ -235,7 +235,7 @@ namespace MonolithGuns
                 SilverBar = 8,
                 TitaniumBar = 2
             };
-            Gun Mosin = new Gun
+            Item Mosin = new Item
             {
                 Name = "Mosin Nagant",
                 WeaponPart = "Sniper",
@@ -245,7 +245,7 @@ namespace MonolithGuns
                 SteelBar = 16,
                 SilverBar = 19
             };
-            Gun M14 = new Gun
+            Item M14 = new Item
             {
                 Name = "M14",
                 WeaponPart = "Sniper",
@@ -256,7 +256,7 @@ namespace MonolithGuns
                 GoldBar = 6,
                 TitaniumBar = 5
             };
-            Gun Super = new Gun
+            Item Super = new Item
             {
                 Name = "M3 Super 90",
                 WeaponPart = "Shotgun",
@@ -266,7 +266,7 @@ namespace MonolithGuns
                 SilverBar = 7,
                 GoldBar = 8
             };
-            Gun M4 = new Gun
+            Item M4 = new Item
             {
                 Name = "M4 Carbine",
                 WeaponPart = "Rifle",
@@ -278,7 +278,7 @@ namespace MonolithGuns
                 GoldBar = 11,
                 TitaniumBar = 1
             };
-            Gun ACR = new Gun
+            Item ACR = new Item
             {
                 Name = "ACR-E",
                 WeaponPart = "Rifle",
@@ -289,7 +289,7 @@ namespace MonolithGuns
                 GoldBar = 10,
                 TitaniumBar = 2
             };
-            Gun KSG = new Gun
+            Item KSG = new Item
             {
                 Name = "KSG-12 Shotgun",
                 WeaponPart = "Shotgun",
@@ -299,7 +299,7 @@ namespace MonolithGuns
                 GoldBar = 8,
                 TitaniumBar = 5
             };
-            Gun AUG = new Gun
+            Item AUG = new Item
             {
                 Name = "AUG A3",
                 WeaponPart = "Rifle",
@@ -310,7 +310,7 @@ namespace MonolithGuns
                 GoldBar = 13,
                 TitaniumBar = 4
             };
-            Gun XM8 = new Gun
+            Item XM8 = new Item
             {
                 Name = "XM8",
                 WeaponPart = "Rifle",
@@ -320,6 +320,83 @@ namespace MonolithGuns
                 SilverBar = 20,
                 GoldBar = 13,
                 TitaniumBar = 7
+            };
+            // BELOW THIS POINT IS NEW
+            Item Copper = new Item
+            {
+                Name = "Copper Bar",
+                CopperBar = 1
+            };
+            Item Iron = new Item
+            {
+                Name = "Iron Bar",
+                IronBar = 1
+            };
+            Item Steel = new Item
+            {
+                Name = "Steel Bar",
+                IronBar = 1
+            };
+            Item Silver = new Item
+            {
+                Name = "Silver Bar",
+                IronBar = 1
+            };
+            Item Gold = new Item
+            {
+                Name = "Gold Bar",
+                IronBar = 1
+            };
+            Item Titanium = new Item
+            {
+                Name = "Titanium Bar",
+                IronBar = 1
+            };
+            Item Lockpick = new Item
+            {
+                Name = "Lockpick",
+                CopperBar = 2,
+                IronBar = 1
+            };
+            Item Siphon = new Item
+            {
+                Name = "Siphon Pump",
+                CopperBar = 2,
+                IronBar = 3,
+                SteelBar = 1
+            };
+            Item Zipties = new Item
+            {
+                Name = "Zipties",
+                IronBar = 2,
+            };
+            Item Mask = new Item
+            {
+                Name = "Gas Mask",
+                CopperBar = 4,
+                IronBar = 4,
+                SteelBar = 4
+            };
+            Item Filter = new Item
+            {
+                Name = "Gas Filter",
+                CopperBar = 4,
+                IronBar = 4,
+                SteelBar = 2
+            };
+            Item Charge = new Item
+            {
+                Name = "Door Charge",
+                CopperBar = 6,
+                IronBar = 8,
+                SteelBar = 3,
+                GoldBar = 4
+            };
+            Item Machete = new Item
+            {
+                Name = "Machete",
+                CopperBar = 8,
+                IronBar = 5
             };
             Console.Clear();
             string itemInput = "Banana";
@@ -333,29 +410,74 @@ namespace MonolithGuns
             while (itemInput != "done")
             {
                 PrintLine();
-                PrintRow("Rifles", "SMGs", "Pistols", "Shotguns");
+                PrintRow("Rifles", "SMGs", "Pistols", "Shotguns", "Other", "Manual");
                 PrintLine();
                 PrintLine();
-                PrintRow(AK.Name, MAC11.Name, Makarov.Name, Shorty.Name);
-                PrintRow(AR15.Name, MP5.Name, M1911.Name, Super.Name);
-                PrintRow(G36C.Name, UMP.Name, P99.Name, KSG.Name);
-                PrintRow(LR.Name, Thompson.Name, FiveSeven.Name, "");
-                PrintRow(DP.Name, Vector.Name, MR96.Name, "");
-                PrintRow(Galil.Name, MP9.Name, Glock18.Name, "");
-                PrintRow(G3A3.Name, "", Glock17.Name, "");
-                PrintRow(Honey.Name, "", Deagle.Name, "");
-                PrintRow(M249.Name, "", "", "");
-                PrintRow(Mosin.Name, "", "", "");
-                PrintRow(M14.Name, "", "", "");
-                PrintRow(M4.Name, "", "", "");
-                PrintRow(ACR.Name, "", "", "");
-                PrintRow(AUG.Name, "", "", "");
-                PrintRow(XM8.Name, "", "", "");
+                PrintRow(AK.Name, MAC11.Name, Makarov.Name, Shorty.Name, Lockpick.Name, Copper.Name);
+                PrintRow(AR15.Name, MP5.Name, M1911.Name, Super.Name, Siphon.Name, Iron.Name);
+                PrintRow(G36C.Name, UMP.Name, P99.Name, KSG.Name, Zipties.Name, Steel.Name);
+                PrintRow(LR.Name, Thompson.Name, FiveSeven.Name, Mask.Name, Filter.Name, Silver.Name);
+                PrintRow(DP.Name, Vector.Name, MR96.Name, "", Charge.Name, Gold.Name);
+                PrintRow(Galil.Name, MP9.Name, Glock18.Name, "", Machete.Name, Titanium.Name);
+                PrintRow(G3A3.Name, "", Glock17.Name, "", "", "");
+                PrintRow(Honey.Name, "", Deagle.Name, "", "", "");
+                PrintRow(M249.Name, "", "", "", "", "");
+                PrintRow(Mosin.Name, "", "", "", "", "");
+                PrintRow(M14.Name, "", "", "", "", "");
+                PrintRow(M4.Name, "", "", "", "", "");
+                PrintRow(ACR.Name, "", "", "", "", "");
+                PrintRow(AUG.Name, "", "", "", "", "");
+                PrintRow(XM8.Name, "", "", "", "", "");
                 PrintLine();
 
-                Console.WriteLine("\nType the exact name of a gun from the table above. (type 'done' if you're done)");
+                Console.WriteLine("\nType the exact name of a item from the table above. (type 'done' if you're done)");
                 itemInput = Console.ReadLine();
-                while (!(itemInput == "done" || itemInput == Makarov.Name || itemInput == M1911.Name || itemInput == P99.Name || itemInput == FiveSeven.Name || itemInput == MAC11.Name || itemInput == MR96.Name || itemInput == MP5.Name || itemInput == UMP.Name || itemInput == AK.Name || itemInput == Glock18.Name || itemInput == AR15.Name || itemInput == Thompson.Name || itemInput == Glock17.Name || itemInput == Vector.Name || itemInput == Deagle.Name || itemInput == G36C.Name || itemInput == LR.Name || itemInput == DP.Name || itemInput == Shorty.Name || itemInput == Galil.Name || itemInput == G3A3.Name || itemInput == Honey.Name || itemInput == M249.Name || itemInput == MP9.Name || itemInput == Mosin.Name || itemInput == M14.Name || itemInput == Super.Name || itemInput == M4.Name || itemInput == ACR.Name || itemInput == KSG.Name || itemInput == AUG.Name || itemInput == XM8.Name))
+                while (!(itemInput == "done" ||
+                    itemInput == Makarov.Name ||
+                    itemInput == M1911.Name ||
+                    itemInput == P99.Name ||
+                    itemInput == FiveSeven.Name ||
+                    itemInput == MAC11.Name ||
+                    itemInput == MR96.Name ||
+                    itemInput == MP5.Name ||
+                    itemInput == UMP.Name ||
+                    itemInput == AK.Name ||
+                    itemInput == Glock18.Name ||
+                    itemInput == AR15.Name ||
+                    itemInput == Thompson.Name ||
+                    itemInput == Glock17.Name ||
+                    itemInput == Vector.Name ||
+                    itemInput == Deagle.Name ||
+                    itemInput == G36C.Name ||
+                    itemInput == LR.Name ||
+                    itemInput == DP.Name ||
+                    itemInput == Shorty.Name ||
+                    itemInput == Galil.Name ||
+                    itemInput == G3A3.Name ||
+                    itemInput == Honey.Name ||
+                    itemInput == M249.Name ||
+                    itemInput == MP9.Name ||
+                    itemInput == Mosin.Name ||
+                    itemInput == M14.Name ||
+                    itemInput == Super.Name ||
+                    itemInput == M4.Name ||
+                    itemInput == ACR.Name ||
+                    itemInput == KSG.Name ||
+                    itemInput == AUG.Name ||
+                    itemInput == XM8.Name ||
+                    itemInput == Copper.Name ||
+                    itemInput == Iron.Name ||
+                    itemInput == Steel.Name ||
+                    itemInput == Silver.Name ||
+                    itemInput == Gold.Name ||
+                    itemInput == Titanium.Name ||
+                    itemInput == Lockpick.Name ||
+                    itemInput == Siphon.Name ||
+                    itemInput == Zipties.Name ||
+                    itemInput == Mask.Name ||
+                    itemInput == Filter.Name ||
+                    itemInput == Charge.Name ||
+                    itemInput == Machete.Name))
                 {
                     Console.WriteLine("ERROR -- Input unrecognized");
                     itemInput = Console.ReadLine();
@@ -387,9 +509,9 @@ namespace MonolithGuns
                 Console.Write("."); Thread.Sleep(500);
 
                 // This is where the math needs to be done.
-                ArrayList GunArray = new ArrayList()
+                ArrayList ItemArray = new ArrayList()
                 {
-                    new Gun
+                    new Item
                     {
                         Name = "Makarov",
                         WeaponPart = "Pistol",
@@ -399,7 +521,7 @@ namespace MonolithGuns
                         CopperBar = 8,
                         IronBar = 5
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "M1911",
                         WeaponPart = "Pistol",
@@ -409,7 +531,7 @@ namespace MonolithGuns
                         CopperBar = 9,
                         IronBar = 6
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "P99",
                         WeaponPart = "Pistol",
@@ -419,7 +541,7 @@ namespace MonolithGuns
                         CopperBar = 8,
                         IronBar = 8
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "FN-FiveSeven",
                         WeaponPart = "Pistol",
@@ -430,7 +552,7 @@ namespace MonolithGuns
                         IronBar = 9,
                         SteelBar = 2
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "Mac-11",
                         WeaponPart = "Pistol",
@@ -440,7 +562,7 @@ namespace MonolithGuns
                         CopperBar = 9,
                         IronBar = 10
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "MR96",
                         WeaponPart = "Pistol",
@@ -451,7 +573,7 @@ namespace MonolithGuns
                         IronBar = 5,
                         SteelBar = 5
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "HK MP5",
                         WeaponPart = "Pistol",
@@ -462,7 +584,7 @@ namespace MonolithGuns
                         IronBar = 12,
                         SteelBar = 2
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "H&K UMP .45",
                         WeaponPart = "Pistol",
@@ -472,7 +594,7 @@ namespace MonolithGuns
                         CopperBar = 14,
                         IronBar = 16
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "AK-74",
                         WeaponPart = "Damaged Rifle",
@@ -483,7 +605,7 @@ namespace MonolithGuns
                         IronBar = 11,
                         SteelBar = 1
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "Glock 18",
                         WeaponPart = "Pistol",
@@ -494,7 +616,7 @@ namespace MonolithGuns
                         IronBar = 12,
                         SteelBar = 6
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "AR-15",
                         WeaponPart = "Damaged Rifle",
@@ -505,7 +627,7 @@ namespace MonolithGuns
                         IronBar = 11,
                         SteelBar = 3
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "Thompson",
                         WeaponPart = "Pistol",
@@ -516,7 +638,7 @@ namespace MonolithGuns
                         IronBar = 17,
                         SteelBar = 2
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "Glock 17",
                         WeaponPart = "Pistol",
@@ -529,7 +651,7 @@ namespace MonolithGuns
                         SilverBar = 1,
                         GoldBar = 2
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "Kriss Vector",
                         WeaponPart = "Pistol",
@@ -541,7 +663,7 @@ namespace MonolithGuns
                         SilverBar = 5,
                         GoldBar = 6
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "Desert Eagle",
                         WeaponPart = "Pistol",
@@ -552,7 +674,7 @@ namespace MonolithGuns
                         IronBar = 10,
                         SteelBar = 3
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "G36C",
                         WeaponPart = "Damaged Rifle",
@@ -563,7 +685,7 @@ namespace MonolithGuns
                         IronBar = 11,
                         SteelBar = 5
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "LR-300",
                         WeaponPart = "Rifle",
@@ -576,7 +698,7 @@ namespace MonolithGuns
                         SteelBar = 5,
                         SilverBar = 4
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "DP-28",
                         WeaponPart = "Rifle",
@@ -589,7 +711,7 @@ namespace MonolithGuns
                         SteelBar = 6,
                         SilverBar = 5
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "Serbu Shorty",
                         WeaponPart = "Shotgun",
@@ -601,7 +723,7 @@ namespace MonolithGuns
                         IronBar = 8,
                         SteelBar = 10
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "IMI Galil",
                         WeaponPart = "Rifle",
@@ -613,7 +735,7 @@ namespace MonolithGuns
                         SteelBar = 9,
                         SilverBar = 10
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "G3A3",
                         WeaponPart = "Rifle",
@@ -625,7 +747,7 @@ namespace MonolithGuns
                         SteelBar = 12,
                         SilverBar = 9
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "Honey Badger",
                         WeaponPart = "Rifle",
@@ -638,7 +760,7 @@ namespace MonolithGuns
                         SteelBar = 12,
                         GoldBar = 11
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "M249",
                         WeaponPart = "Rifle",
@@ -652,7 +774,7 @@ namespace MonolithGuns
                         GoldBar = 13,
                         TitaniumBar = 3
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "BT MP9",
                         WeaponPart = "Pistol",
@@ -664,7 +786,7 @@ namespace MonolithGuns
                         SilverBar = 8,
                         TitaniumBar = 2
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "Mosin Nagant",
                         WeaponPart = "Sniper",
@@ -677,7 +799,7 @@ namespace MonolithGuns
                         SteelBar = 16,
                         SilverBar = 19
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "M14",
                         WeaponPart = "Sniper",
@@ -691,7 +813,7 @@ namespace MonolithGuns
                         GoldBar = 6,
                         TitaniumBar = 5
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "M3 Super 90",
                         WeaponPart = "Shotgun",
@@ -704,7 +826,7 @@ namespace MonolithGuns
                         SilverBar = 7,
                         GoldBar = 8
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "M4 Carbine",
                         WeaponPart = "Rifle",
@@ -719,7 +841,7 @@ namespace MonolithGuns
                         GoldBar = 11,
                         TitaniumBar = 1
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "ACR-E",
                         WeaponPart = "Rifle",
@@ -733,7 +855,7 @@ namespace MonolithGuns
                         GoldBar = 10,
                         TitaniumBar = 2
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "KSG-12 Shotgun",
                         WeaponPart = "Shotgun",
@@ -746,7 +868,7 @@ namespace MonolithGuns
                         GoldBar = 8,
                         TitaniumBar = 5
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "AUG A3",
                         WeaponPart = "Rifle",
@@ -760,7 +882,7 @@ namespace MonolithGuns
                         GoldBar = 13,
                         TitaniumBar = 4
                     },
-                    new Gun
+                    new Item
                     {
                         Name = "XM8",
                         WeaponPart = "Rifle",
@@ -773,18 +895,94 @@ namespace MonolithGuns
                         SilverBar = 20,
                         GoldBar = 13,
                         TitaniumBar = 7
+                    },
+                    new Item
+                    {
+                        Name = "Copper Bar",
+                        CopperBar = 1
+                    },
+                    new Item
+                    {
+                        Name = "Iron Bar",
+                        IronBar = 1
+                    },
+                    new Item
+                    {
+                        Name = "Steel Bar",
+                        IronBar = 1
+                    },
+                    new Item
+                    {
+                        Name = "Silver Bar",
+                        IronBar = 1
+                    },
+                    new Item
+                    {
+                        Name = "Gold Bar",
+                        IronBar = 1
+                    },
+                    new Item
+                    {
+                        Name = "Titanium Bar",
+                        IronBar = 1
+                    },
+                    new Item
+                    {
+                        Name = "Lockpick",
+                        CopperBar = 2,
+                        IronBar = 1
+                    },
+                    new Item
+                    {
+                        Name = "Siphon Pump",
+                        CopperBar = 2,
+                        IronBar = 3,
+                        SteelBar = 1
+                    },
+                    new Item
+                    {
+                        Name = "Zipties",
+                        IronBar = 2,
+                    },
+                    new Item
+                    {
+                        Name = "Gas Mask",
+                        CopperBar = 4,
+                        IronBar = 4,
+                        SteelBar = 4
+                    },
+                    new Item
+                    {
+                        Name = "Gas Filter",
+                        CopperBar = 4,
+                        IronBar = 4,
+                        SteelBar = 2
+                    },
+                    new Item
+                    {
+                        Name = "Door Charge",
+                        CopperBar = 6,
+                        IronBar = 8,
+                        SteelBar = 3,
+                        GoldBar = 4
+                    },
+                    new Item
+                    {
+                        Name = "Machete",
+                        CopperBar = 8,
+                        IronBar = 5
                     }
                 };
-                var GunEnum = GunArray.OfType<Gun>();
-                var AddedGun = from gun in GunEnum where gun.Name == itemInput orderby gun.Name select gun;
-                foreach(var gun in AddedGun)
+                var ItemEnum = ItemArray.OfType<Item>();
+                var AddedItem = from item in ItemEnum where item.Name == itemInput orderby item.Name select item;
+                foreach(var item in AddedItem)
                 {
-                    TotalCoal = TotalCoal + (gun.CoalChunk*itemQuantity) + gun.PartCoalChunk * itemQuantity;
-                    TotalCopper = TotalCopper + (gun.CopperChunk*itemQuantity) + gun.PartCopperChunk * itemQuantity;
-                    TotalIron = TotalIron + (gun.IronChunk*itemQuantity) + gun.PartIronChunk * itemQuantity;
-                    TotalSilver = TotalSilver + (gun.SilverChunk*itemQuantity) + gun.PartSilverChunk * itemQuantity;
-                    TotalGold = TotalGold + (gun.GoldChunk*itemQuantity) + gun.PartGoldChunk * itemQuantity;
-                    TotalTitanium = TotalTitanium = (gun.TitaniumChunk*itemQuantity);
+                    TotalCoal = TotalCoal + (item.CoalChunk*itemQuantity) + item.PartCoalChunk * itemQuantity;
+                    TotalCopper = TotalCopper + (item.CopperChunk*itemQuantity) + item.PartCopperChunk * itemQuantity;
+                    TotalIron = TotalIron + (item.IronChunk*itemQuantity) + item.PartIronChunk * itemQuantity;
+                    TotalSilver = TotalSilver + (item.SilverChunk*itemQuantity) + item.PartSilverChunk * itemQuantity;
+                    TotalGold = TotalGold + (item.GoldChunk*itemQuantity) + item.PartGoldChunk * itemQuantity;
+                    TotalTitanium = TotalTitanium = (item.TitaniumChunk*itemQuantity);
                 }
                 Console.Clear();
             }
@@ -799,7 +997,7 @@ namespace MonolithGuns
             Console.WriteLine("\n\n\nCreated by parkerx\nPress any key to close...");
             Console.ReadKey();
         }
-        static int tableWidth = 73;
+        static int tableWidth = 91;
         static void PrintLine()
         {
             Console.WriteLine(new string('-', tableWidth));
