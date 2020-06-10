@@ -398,6 +398,14 @@ namespace MonolithItems
                 CopperBar = 8,
                 IronBar = 5
             };
+            Item Gas = new Item
+            {
+                Name = "CK Gas Grenade",
+                CopperBar = 12,
+                IronBar = 10,
+                SteelBar = 10,
+                TitaniumBar = 4
+            };
             Console.Clear();
             string itemInput = "Banana";
             int itemQuantity = 0;
@@ -419,7 +427,7 @@ namespace MonolithItems
                 PrintRow(LR.Name, Thompson.Name, FiveSeven.Name, Mask.Name, Filter.Name, Silver.Name);
                 PrintRow(DP.Name, Vector.Name, MR96.Name, "", Charge.Name, Gold.Name);
                 PrintRow(Galil.Name, MP9.Name, Glock18.Name, "", Machete.Name, Titanium.Name);
-                PrintRow(G3A3.Name, "", Glock17.Name, "", "", "");
+                PrintRow(G3A3.Name, "", Glock17.Name, "", Gas.Name, "");
                 PrintRow(Honey.Name, "", Deagle.Name, "", "", "");
                 PrintRow(M249.Name, "", "", "", "", "");
                 PrintRow(Mosin.Name, "", "", "", "", "");
@@ -477,7 +485,8 @@ namespace MonolithItems
                     itemInput == Mask.Name ||
                     itemInput == Filter.Name ||
                     itemInput == Charge.Name ||
-                    itemInput == Machete.Name))
+                    itemInput == Machete.Name ||
+                    itemInput == Gas.Name))
                 {
                     Console.WriteLine("ERROR -- Input unrecognized");
                     itemInput = Console.ReadLine();
@@ -971,6 +980,14 @@ namespace MonolithItems
                         Name = "Machete",
                         CopperBar = 8,
                         IronBar = 5
+                    },
+                    new Item
+                    {
+                        Name = "CK Gas Grenade",
+                        CopperBar = 12,
+                        IronBar = 10,
+                        SteelBar = 10,
+                        TitaniumBar = 4
                     }
                 };
                 var ItemEnum = ItemArray.OfType<Item>();
