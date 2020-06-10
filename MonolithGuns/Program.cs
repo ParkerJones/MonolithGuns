@@ -424,11 +424,11 @@ namespace MonolithItems
                 PrintRow(AK.Name, MAC11.Name, Makarov.Name, Shorty.Name, Lockpick.Name, Copper.Name);
                 PrintRow(AR15.Name, MP5.Name, M1911.Name, Super.Name, Siphon.Name, Iron.Name);
                 PrintRow(G36C.Name, UMP.Name, P99.Name, KSG.Name, Zipties.Name, Steel.Name);
-                PrintRow(LR.Name, Thompson.Name, FiveSeven.Name, Mask.Name, Filter.Name, Silver.Name);
-                PrintRow(DP.Name, Vector.Name, MR96.Name, "", Charge.Name, Gold.Name);
-                PrintRow(Galil.Name, MP9.Name, Glock18.Name, "", Machete.Name, Titanium.Name);
-                PrintRow(G3A3.Name, "", Glock17.Name, "", Gas.Name, "");
-                PrintRow(Honey.Name, "", Deagle.Name, "", "", "");
+                PrintRow(LR.Name, Thompson.Name, FiveSeven.Name, "", Mask.Name, Silver.Name);
+                PrintRow(DP.Name, Vector.Name, MR96.Name, "", Filter.Name, Gold.Name);
+                PrintRow(Galil.Name, MP9.Name, Glock18.Name, "", Charge.Name, Titanium.Name);
+                PrintRow(G3A3.Name, "", Glock17.Name, "", Machete.Name, "");
+                PrintRow(Honey.Name, "", Deagle.Name, "", Gas.Name, "");
                 PrintRow(M249.Name, "", "", "", "", "");
                 PrintRow(Mosin.Name, "", "", "", "", "");
                 PrintRow(M14.Name, "", "", "", "", "");
