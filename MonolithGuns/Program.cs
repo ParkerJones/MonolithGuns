@@ -333,18 +333,20 @@ namespace MonolithGuns
             while (itemInput != "done")
             {
                 PrintLine();
-                PrintRow("Rifles", "SMGs", "Pistols", "Other");
+                PrintRow("Rifles", "SMGs", "Pistols", "Shotguns");
                 PrintLine();
                 PrintLine();
                 PrintRow(AK.Name, MAC11.Name, Makarov.Name, Shorty.Name);
-                PrintRow(AR15.Name, MP5.Name, M1911.Name, Mosin.Name);
-                PrintRow(G36C.Name, UMP.Name, P99.Name, M14.Name);
-                PrintRow(LR.Name, Thompson.Name, FiveSeven.Name, Super.Name);
-                PrintRow(DP.Name, Vector.Name, MR96.Name, KSG.Name);
+                PrintRow(AR15.Name, MP5.Name, M1911.Name, Super.Name);
+                PrintRow(G36C.Name, UMP.Name, P99.Name, KSG.Name);
+                PrintRow(LR.Name, Thompson.Name, FiveSeven.Name, "");
+                PrintRow(DP.Name, Vector.Name, MR96.Name, "");
                 PrintRow(Galil.Name, MP9.Name, Glock18.Name, "");
                 PrintRow(G3A3.Name, "", Glock17.Name, "");
                 PrintRow(Honey.Name, "", Deagle.Name, "");
                 PrintRow(M249.Name, "", "", "");
+                PrintRow(Mosin.Name, "", "", "");
+                PrintRow(M14.Name, "", "", "");
                 PrintRow(M4.Name, "", "", "");
                 PrintRow(ACR.Name, "", "", "");
                 PrintRow(AUG.Name, "", "", "");
