@@ -221,9 +221,9 @@ namespace MonolithItems
                 Crafting = 60,
                 CopperBar = 9,
                 IronBar = 11,
-                SteelBar = 12,
+                SteelBar = 8,
                 GoldBar = 13,
-                TitaniumBar = 3
+                TitaniumBar = 1
             };
             Item MP9 = new Item
             {
@@ -779,9 +779,9 @@ namespace MonolithItems
                         Crafting = 60,
                         CopperBar = 9,
                         IronBar = 11,
-                        SteelBar = 12,
+                        SteelBar = 8,
                         GoldBar = 13,
-                        TitaniumBar = 3
+                        TitaniumBar = 1
                     },
                     new Item
                     {
