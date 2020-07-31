@@ -146,7 +146,8 @@ namespace MonolithItems
                 Crafting = 35,
                 CopperBar = 8,
                 IronBar = 10,
-                SteelBar = 3
+                SteelBar = 3,
+                GoldBar = 2
             };
             Item G36C = new Item
             {
@@ -174,7 +175,7 @@ namespace MonolithItems
                 Crafting = 40,
                 CopperBar = 12,
                 IronBar = 12,
-                SteelBar = 6,
+                SteelBar = 4,
                 SilverBar = 5
             };
             Item Shorty = new Item
@@ -193,7 +194,8 @@ namespace MonolithItems
                 Crafting = 41,
                 IronBar = 14,
                 SteelBar = 9,
-                SilverBar = 10
+                SilverBar = 8,
+                TitaniumBar = 1
             };
             Item G3A3 = new Item
             {
@@ -233,6 +235,7 @@ namespace MonolithItems
                 IronBar = 13,
                 SteelBar = 5,
                 SilverBar = 8,
+                GoldBar = 8,
                 TitaniumBar = 2
             };
             Item Mosin = new Item
@@ -681,7 +684,8 @@ namespace MonolithItems
                         Crafting = 35,
                         CopperBar = 8,
                         IronBar = 10,
-                        SteelBar = 3
+                        SteelBar = 3,
+                        GoldBar = 2
                     },
                     new Item
                     {
@@ -717,7 +721,7 @@ namespace MonolithItems
                         Crafting = 40,
                         CopperBar = 12,
                         IronBar = 12,
-                        SteelBar = 6,
+                        SteelBar = 4,
                         SilverBar = 5
                     },
                     new Item
@@ -742,7 +746,8 @@ namespace MonolithItems
                         Crafting = 41,
                         IronBar = 14,
                         SteelBar = 9,
-                        SilverBar = 10
+                        SilverBar = 8,
+                        TitaniumBar = 1
                     },
                     new Item
                     {
@@ -793,6 +798,7 @@ namespace MonolithItems
                         IronBar = 13,
                         SteelBar = 5,
                         SilverBar = 8,
+                        GoldBar = 8,
                         TitaniumBar = 2
                     },
                     new Item
