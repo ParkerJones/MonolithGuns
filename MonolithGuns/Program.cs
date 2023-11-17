@@ -3,18 +3,13 @@ using System.Threading;
 using System.Collections;
 using System.Linq;
 
-/*
- * Title: Monolith Item Crafting Calculator
- * Author: parkerx
- * Date: Released on 6-9-2020
- */
-
 namespace MonolithItems
 {
     class Program
     {
         static void Main(string[] args)
         {
+            // *** Firearms ***
             Item Makarov = new Item
             {
                 Name = "Makarov",
@@ -324,7 +319,8 @@ namespace MonolithItems
                 GoldBar = 13,
                 TitaniumBar = 7
             };
-            // BELOW THIS POINT IS NEW
+
+            // *** Metal Bars ***
             Item Copper = new Item
             {
                 Name = "Copper Bar",
@@ -355,6 +351,8 @@ namespace MonolithItems
                 Name = "Titanium Bar",
                 IronBar = 1
             };
+
+            // *** Other Items ***
             Item Lockpick = new Item
             {
                 Name = "Lockpick",
@@ -409,6 +407,7 @@ namespace MonolithItems
                 SteelBar = 10,
                 TitaniumBar = 4
             };
+
             Console.Clear();
             string itemInput = "Banana";
             int itemQuantity = 0;
